@@ -1,0 +1,19 @@
+parent-container {margin: auto}
+
+
+body { border-color: rgb(32, 174, 218);
+    box-shadow: 5px 5px 5px 5px black;
+    margin-top: 10em ;
+    height: 15em;
+    width: 35em ;
+    transform: rotate(-10deg);
+    margin-left: 30em }
+
+
+h1{ color:rgb(126, 168, 231)}
+
+    span { font-weight: bold; }
+
+        li {font-style: italic; }
+
+        p {font-weight: lighter; }
