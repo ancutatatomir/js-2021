@@ -3,7 +3,7 @@ document.querySelector("input[type='button']")
 
 
 function crypt()  { let text = document.querySelector("textarea").value
-                    let cypher = document.querySelector("#cypher").value
+                    let cypher = Number(document.querySelector("#cypher").value)
                     let encryptedText = encryptAscii(text, cypher)
                     document.querySelector("#result").innerText = encryptedText
 
@@ -19,17 +19,21 @@ function crypt()  { let text = document.querySelector("textarea").value
         
        return encryptedText }
 
-       
-       function encryptedLetter(letter, cypher) {
+
+       function encryptLetter(letter, cypher) {
            let ascii = letter.charCodeAt(0)
-           let encryptedAscii = (ascii - 65) % 26 + 65
+           let encryptedAscii = (ascii - 65 + cypher) % 26 + 65
            return String.fromCharCode(encryptedAscii)
 
 
        }
 
 
-function encrypt (text, cypher) {
+
+       
+
+
+function encryptArray(text, cypher) {
     let alphabet = "ABCDEFGHIJKLMNOPRSTUVWXYZ".split("")
     let encryptedAlphabet = shift(alphabet, cypher)
     let letterMap = zipAlphabet(alphabet, encryptedAlphabet)
