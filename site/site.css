@@ -10,9 +10,9 @@
 
 body {
 
-
-    background-color: rgb(38,38,38);
-    color: rgb(231, 231, 231);
+    
+    background-color: var(--back-color);
+    color:var(--font-color);
     font-family: sans-serif;
 }
 
@@ -28,11 +28,13 @@ nav ul {
 
     display: flex;
     justify-content: center;
+    align-items: center;
 
 }
 
-nav ul li {
-margin: 0 1em ;
+nav ul li
+ {
+margin: 0.5em 1em ;
 list-style-type:none;
 text-transform: uppercase;
 
@@ -42,12 +44,15 @@ text-transform: uppercase;
 
 #switch {
 
-    font-size: 3 em;
+    font-size: 1.5em em;
+    position: relative;
+    top: -0.1em;
+    cursor: pointer;
 }
 
 div {
 
-height: 50vh;
+height: 40vh;
 background-image: url("luna.jpg");
 background-size: cover;
 background-position-y: -10vh;
@@ -55,6 +60,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-color: rgb(38,38,38);
+color: var(--back-color);
 }
 
