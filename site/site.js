@@ -11,8 +11,8 @@ function setTheme(theme) {
 
 
 
-    let symbol = css.disabled ? "&#9789;" : "&#9788;"
-    document.querySelector("#switch").innerHTML = symbol
+    // let symbol = css.disabled ? "&#9789;" : "&#9788;"
+    // document.querySelector("#switch").innerHTML = symbol
 
     localStorage.setItem("theme", theme)
 
@@ -36,8 +36,8 @@ function changeTheme(){
 
 
 
-let symbol = css.disabled ? "&#9789;" : "&#9788;"
-document.querySelector("#switch").innerHTML = symbol
+// let symbol = css.disabled ? "&#9789;" : "&#9788;"
+// document.querySelector("#switch").innerHTML = symbol
 
 
 let theme = css.disabled ? "light" : "dark"
